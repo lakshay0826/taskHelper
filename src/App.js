@@ -1,24 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Fab from '@material-ui/core/Fab';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="box">
+      <div className="container"> 
+          <Fab 
+          style={{margin:'2px'}}
+          variant="extended" 
+          color="secondary">
+            Sign In
+          </Fab>
+          <Fab 
+          style={{margin:'2px'}}
+          variant="extended" 
+          color="secondary">
+            Sign Up
+          </Fab>
+          <div>
+
+          </div>
+          <h3 className="white">or</h3>
+          <i 
+          style={{margin:'2px'}}
+          class="fa fa-facebook-square fa-3x white"
+           aria-hidden="true"></i>
+          <i 
+          class="fa fa-google fa-3x white" 
+          aria-hidden="true"
+          style={{margin:'2px'}}
+          ></i>
+      </div>
+    
     </div>
   );
 }
